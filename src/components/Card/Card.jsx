@@ -10,6 +10,11 @@ const Card = () => {
       <div className={classes.body}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit nam repellat, doloremque obcaecati itaque nostrum vitae eum natus eveniet?
       </div>
+      <div className={classes.commands}>
+        <span>prev</span>
+        <span>next</span>
+      </div>
+      <button className={classes.randomBtn}>show random</button>
     </div>
   )
 }
