@@ -1,6 +1,22 @@
+import { useState } from 'react';
+
 import classes from './Card.module.css';
+import reviews from '../../data';
 
 const Card = () => {
+
+  const [ people, setPeople ] = useState(reviews);
+  const [ reviewNumber, setReviewNumber ] = useState(0);
+
+  const nextReview = () => {
+    setReviewNumber(prev => prev + 1);
+  }
+
+  const prevReview = () => {
+    if(reviewNumber === 0) return;
+    setReviewNumber(prev => prev - 1);
+  }
+  
   return (
     <div className={classes.card}>
       <div className={classes.user}>
