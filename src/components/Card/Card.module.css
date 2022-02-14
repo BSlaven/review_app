@@ -7,15 +7,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   padding: 1rem;
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  font-size: 9rem;
+  color:rgba(0, 0, 0, 0.3);
 }
 
 .user {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  margin-bottom: 1rem;
 }
 
 .image {
@@ -29,6 +37,11 @@
 .name {
   font-size: 0.9rem;
   font-weight: bold;
+  margin-top: 0.2rem;
+}
+
+.body {
+  z-index: 2;
 }
 
 .randomBtn {

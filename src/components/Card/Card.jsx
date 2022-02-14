@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { FaQuoteLeft, FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 
 import classes from './Card.module.css';
 import reviews from '../../data';
@@ -24,6 +25,7 @@ const Card = () => {
   
   return (
     <div className={classes.card}>
+      <FaQuoteLeft className={classes.quote} />
       <div className={classes.user}>
         <img 
           className={classes.image}
