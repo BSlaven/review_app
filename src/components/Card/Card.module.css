@@ -15,11 +15,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-}
-
-.randomBtn {
-  margin-top: 2rem;
+  gap: 0.1rem;
 }
 
 .image {
@@ -28,4 +24,13 @@
   margin: 0 auto;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.name {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.randomBtn {
+  margin-top: 2rem;
 }
