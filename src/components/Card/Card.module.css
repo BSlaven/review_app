@@ -17,6 +17,7 @@
   left: 1rem;
   font-size: 9rem;
   color:rgba(0, 0, 0, 0.3);
+  /* transform: translateX(4rem); */
 }
 
 .user {
