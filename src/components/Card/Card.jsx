@@ -26,6 +26,7 @@ const Card = () => {
     <div className={classes.card}>
       <div className={classes.user}>
         <img 
+          className={classes.image}
           src={currentReview.image} 
           alt={`image of ${currentReview.name}`} />
         <p className={classes.name}>{currentReview.name}</p>
