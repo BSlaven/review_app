@@ -35,8 +35,12 @@ const Card = () => {
       </div>
       <div className={classes.body}>{currentReview.text}</div>
       <div className={classes.commands}>
-        <span>prev</span>
-        <span>next</span>
+        <span className={classes.moveIcon}>
+          <FaChevronLeft className={classes.iconPrev} />
+        </span>
+        <span className={classes.moveIcon}>
+          <FaChevronRight className={classes.iconNext} />
+        </span>
       </div>
       <button className={classes.randomBtn}>show random</button>
     </div>
