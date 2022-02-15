@@ -35,10 +35,10 @@ const Card = () => {
       </div>
       <div className={classes.body}>{currentReview.text}</div>
       <div className={classes.commands}>
-        <span className={classes.moveIcon}>
+        <span onClick={prevReview} className={classes.moveIcon}>
           <FaChevronLeft className={classes.iconPrev} />
         </span>
-        <span className={classes.moveIcon}>
+        <span onClick={nextReview} className={classes.moveIcon}>
           <FaChevronRight className={classes.iconNext} />
         </span>
       </div>
