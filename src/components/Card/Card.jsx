@@ -12,9 +12,14 @@ const Card = () => {
 
   useEffect(() => {
     setCurrentReview(people[reviewNumber]);
-  }, [reviewNumber])
+  }, [reviewNumber]);
+
+  useEffect(() => {
+    console.log(reviewNumber);
+  }, [reviewNumber]);
 
   const nextReview = () => {
+    if(reviewNumber + 1 === people.length) return;
     setReviewNumber(prev => prev + 1);
   }
 
@@ -25,8 +30,7 @@ const Card = () => {
 
   const showRandomReview = () => {
     const randomNumber = Math.floor(Math.random() * people.length);
-    const randomReview = people[randomNumber];
-    setCurrentReview(randomReview);
+    setReviewNumber(randomNumber);
   }
   
   return (
