@@ -14,10 +14,6 @@ const Card = () => {
     setCurrentReview(people[reviewNumber]);
   }, [reviewNumber]);
 
-  useEffect(() => {
-    console.log(reviewNumber);
-  }, [reviewNumber]);
-
   const nextReview = () => {
     if(reviewNumber + 1 === people.length) return;
     setReviewNumber(prev => prev + 1);
