@@ -22,6 +22,12 @@ const Card = () => {
     if(reviewNumber === 0) return;
     setReviewNumber(prev => prev - 1);
   }
+
+  const showRandomReview = () => {
+    const randomNumber = Math.floor(Math.random() * people.length);
+    const randomReview = people[randomNumber];
+    setCurrentReview(randomReview);
+  }
   
   return (
     <div className={classes.card}>
@@ -42,7 +48,11 @@ const Card = () => {
           <FaChevronRight className={classes.iconNext} />
         </span>
       </div>
-      <button className={classes.randomBtn}>show random</button>
+      <button 
+        onClick={showRandomReview}
+        className={classes.randomBtn}>
+        show random
+      </button>
     </div>
   )
 }
